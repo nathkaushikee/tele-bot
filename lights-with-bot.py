@@ -31,7 +31,7 @@ def off(update,context):
   value = Data(value=0)
   value_send = aio.create_data('bot', value)
 
-u = Updater('TELEGRAM_TOKEN',use_context = True')
+u = Updater(TELEGRAM_TOKEN,use_context = True)
 dp = u.dispatcher
 dp.add_handler(CommandHandler('on',on))
 dp.add_handler(CommandHandler('off',off))
