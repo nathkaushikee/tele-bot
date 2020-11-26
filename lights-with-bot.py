@@ -28,7 +28,6 @@ def on(update,context):
   value = Data(value=1)
   value_send = aio.create_data('bot', value)
     
-
 def off(update,context):
   context.bot.send_message(chat_id=update.effective_chat.id,text="Light has been turned off!")
   context.bot.send_photo(chat_id=update.effective_chat.id, photo= "https://previews.123rf.com/images/colinbehrens/colinbehrens1810/colinbehrens181000005/110239291-light-bulb-black-background-turned-off.jpg")
