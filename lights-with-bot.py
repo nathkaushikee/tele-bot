@@ -1,4 +1,3 @@
-!pip install adafruit-io
 import os
 
 x = os.getenv('ADAFRUIT_IO_USERNAME')
@@ -11,8 +10,6 @@ feed = Feed(name='bot')
 result = aio.create_feed(feed)
 
 from Adafruit_IO import Data
-!pip install python-telegram-bot
-
 from telegram.ext import Updater,CommandHandler,MessageHandler,Filters
 
 def start(update,context):
